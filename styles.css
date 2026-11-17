@@ -68,3 +68,4 @@ body{background:#f6f7f6;background-image:none;color:#203a32}
 @media(min-width:1100px){.journey-layout{grid-template-columns:minmax(0,1fr) minmax(400px,1fr);gap:28px}}
 @media(max-width:800px){.scene-panel{padding:24px}.research-focus{margin-block:20px}.focus-problem{padding:16px}.map-column{min-width:0}}
 @media(max-width:560px){.scene-heading h2,html[dir=rtl] .scene-heading h2{font-size:1.5rem}.scene-heading>p{font-size:.9rem}.focus-problem>p,.focus-questions li>p{font-size:.94rem}.persona-bio{font-size:.82rem}.gap-row{padding:20px}.gap-row>div:nth-child(2){min-width:0;width:100%}.gap-row-actions{margin-inline-start:0}.journey-tools select{font-size:.78rem}.scene-detail-buttons .text-button{font-size:.78rem}}
+@media(max-width:800px){.journey-layout{display:flex;flex-direction:column}.scene-panel{order:-1;width:100%;box-sizing:border-box}.map-column{width:100%;box-sizing:border-box}}
