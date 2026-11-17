@@ -26,3 +26,45 @@ html[dir=rtl] .note-a{left:auto;right:10%}html[dir=rtl] .note-b{left:auto;right:
 @media(max-width:800px){.journey-layout{display:flex;flex-direction:column;align-items:stretch}.map-column{display:contents}.map-topline{order:0;flex-wrap:wrap}.map-viewport,.narrative-route{order:1}.map-caption{order:2}.scene-panel{order:3}.context-products{order:4}.journey-trail{order:5}.jump-scene{display:inline-block;margin-inline-start:auto}.map-topline>.view-toggle{margin-inline-start:auto}.scene-panel{scroll-margin-top:12px}}
 :root{--muted:#596e5e}.map-node:not(.on-route){opacity:1}.map-node:not(.on-route) .node-art{opacity:.62}.scene-tier-compare button{opacity:1}.map-viewport:focus-visible{outline-offset:-4px}input[type=checkbox]{display:inline-block;width:18px;height:18px;vertical-align:middle;margin-inline-end:8px}
 .active-entry-route{z-index:0;pointer-events:none}.active-entry-route path{fill:none;stroke:#718c64;stroke-width:2.4;stroke-dasharray:4 4}.entry-channel{position:absolute;transform:translate(-50%,-50%);width:102px;min-height:28px;background:#f8faee;border:1px solid #a5b99a;border-radius:5px;padding:5px 7px;font-size:.52rem;line-height:1.5;text-align:center;z-index:3;display:flex;align-items:center;justify-content:center;gap:5px}.entry-channel>span{font-size:.9rem;color:#607b50}.entry-channel+ .map-note{opacity:.35}
+/* A quiet research workspace: questions first, supporting material on demand. */
+body{background:#f6f7f6;background-image:none;color:#203a32}
+.site-header{background:#fff;border-bottom:1px solid #e1e7e3}
+.map-paper{background:#f8faf8;background-image:none;opacity:1}
+.map-note,.branch-route,.gap-node{display:none}
+.map-column,.scene-panel{box-shadow:none;background:#fff;border:1px solid #e0e7e2;border-radius:14px}
+.scene-panel{padding:30px;align-self:start}
+.scene-heading h2{font-size:1.65rem;line-height:1.55;margin-block:12px}
+.scene-heading>p{font-size:.92rem;line-height:1.85;color:#54665d}
+.scene-heading .eyebrow{letter-spacing:.04em}
+.research-focus{margin-block:24px 28px;text-align:start}
+.focus-problem{border-inline-start:3px solid #ad8050;background:#faf7f1;padding:18px 20px;border-radius:5px}
+.focus-label{font-size:.8rem;font-weight:700;color:#76542d}
+.focus-problem>p{font-size:1rem;line-height:1.9;margin:10px 0}
+.focus-problem>small{display:block;color:#6f6b60;font-size:.74rem;line-height:1.7}
+.focus-questions{padding-block:22px 0}
+.focus-questions h3{font:700 1.05rem/1.6 var(--sans, sans-serif);margin:0 0 16px}
+.focus-questions ol{padding-inline-start:22px;margin:0}
+.focus-questions li{padding-inline-start:6px;margin-bottom:20px}
+.focus-questions li::marker{color:#60816e;font-weight:700}
+.focus-questions li>p{font-size:.95rem;line-height:1.8;margin:0 0 8px}
+.focus-questions details{font-size:.82rem;color:#52665a;line-height:1.8}
+.focus-questions details p{margin-block:10px}
+.focus-questions details small{display:block}
+.supporting-details{border-top:1px solid #e4e9e5;padding-block:14px;margin-block:12px;color:#53665a}
+.supporting-details>summary,.focus-questions summary{cursor:pointer;font-size:.82rem;font-weight:500;line-height:1.8;min-height:28px}
+.supporting-details>summary:focus-visible,.focus-questions summary:focus-visible{outline:2px solid #4d765e;outline-offset:4px}
+.map-support{padding:16px 22px;margin:0}.map-support .context-products,.map-support .journey-trail{padding-inline:0}
+.indicators-details{margin-top:24px}.indicators-details .journey-indicators{margin-top:12px}
+.action-choices{margin-top:24px}.action-choices>button{font-size:.92rem;padding:16px;background:#fff;border:1px solid #dce5df;border-radius:8px;margin-block:9px}
+.action-choices>button small{font-size:.76rem}.scene-navigation .button{font-size:.9rem}
+.scene-detail-buttons{border-top:1px solid #e4e9e5;padding-top:15px;gap:14px}.scene-detail-buttons .text-button{font-size:.8rem}
+.scene-tier-compare{margin-top:20px}.scene-tier-compare button{font-size:.78rem}
+.map-node .node-art{opacity:.75}.map-node.is-current .node-art{opacity:1}
+.map-node .node-label{font-size:.76rem}.map-node.is-current .node-label{font-weight:700}
+.persona-card{box-shadow:none;background:#fff;border:1px solid #dee6df;border-radius:12px}.persona-card:before{display:none}
+.persona-bio{font-size:.86rem;line-height:1.8}.persona-role{font-size:.82rem}.persona-model{font-size:.78rem}
+.opening h1{font-size:clamp(2.3rem,5vw,3.6rem)}.opening-description{font-size:.95rem;line-height:1.85}
+.home-route{display:none}.gap-row{background:#fff;padding:24px;border:1px solid #e0e7e2;border-radius:10px;margin-bottom:14px}.gap-row h2{font-size:1.25rem}.gap-row p{font-size:.94rem;line-height:1.8}.gap-diamond{display:none}.gap-bottom{margin-top:16px;font-size:.78rem}.gap-row .supporting-details{margin-bottom:0}
+@media(min-width:1100px){.journey-layout{grid-template-columns:minmax(0,1fr) minmax(400px,1fr);gap:28px}}
+@media(max-width:800px){.scene-panel{padding:24px}.research-focus{margin-block:20px}.focus-problem{padding:16px}.map-column{min-width:0}}
+@media(max-width:560px){.scene-heading h2,html[dir=rtl] .scene-heading h2{font-size:1.5rem}.scene-heading>p{font-size:.9rem}.focus-problem>p,.focus-questions li>p{font-size:.94rem}.persona-bio{font-size:.82rem}.gap-row{padding:20px}.gap-row>div:nth-child(2){min-width:0;width:100%}.gap-row-actions{margin-inline-start:0}.journey-tools select{font-size:.78rem}.scene-detail-buttons .text-button{font-size:.78rem}}
