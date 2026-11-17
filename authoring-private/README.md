@@ -1,0 +1,2 @@
+# Private authoring boundary
+Do not store confidential documents in this repository. This directory is ignored except for this explanation and is excluded from the public build. Author in a separately controlled private location, then export an explicitly reviewed presentation-safe dataset. Browser edits are local, unauthenticated and exportable; they are not a secure vault. No original research files are included or fetched by this demonstration.

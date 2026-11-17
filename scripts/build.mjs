@@ -1,0 +1,12 @@
+import {cp,mkdir,rm,writeFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createSeed} from '../src/data/index.js';
+import {validateDataset} from '../src/validation.js';
+const root=resolve(fileURLToPath(new URL('..',import.meta.url)));
+validateDataset(createSeed());
+await rm(resolve(root,'dist'),{recursive:true,force:true});
+await mkdir(resolve(root,'dist'),{recursive:true});
+for(const item of ['index.html','styles.css','src','assets'])await cp(resolve(root,item),resolve(root,'dist',item),{recursive:true});
+await writeFile(resolve(root,'dist/.nojekyll'),'');
+console.log('Built dist/ using a strict public asset allowlist. No private authoring content included.');

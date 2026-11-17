@@ -1,0 +1,6 @@
+{
+  "name": "wessam-360", "version": "1.0.0", "private": true, "type": "module",
+  "description": "An evidence-aware, bilingual playable affluent customer journey",
+  "scripts": {"dev":"node scripts/serve.mjs", "build":"node scripts/build.mjs", "test":"node tests/smoke.mjs"},
+  "engines": {"node": ">=18"}
+}

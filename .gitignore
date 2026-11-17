@@ -1,0 +1,6 @@
+node_modules/
+dist/
+authoring-private/*
+!authoring-private/README.md
+*.local.json
+.DS_Store
